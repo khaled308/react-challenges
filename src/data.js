@@ -1,44 +1,47 @@
-export const data = [
+export const features = [
     {
         id : 0,
-        description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore asperiores unde. Totam, alias porro!',
-        price: 11.98,
-        rating: 5,
-        img : "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
+        order: '01',
+        title : 'Track company-wide progress',
+        description : 'See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.'
     },
     {
         id : 1,
-        description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore asperiores unde. Totam, alias porro!',
-        price: 239,
-        rating: 4,
-        img : "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
+        order : '02',
+        title : 'Advanced built-in reports',
+        description: 'Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.'
     },
     {
-        id : 2,
-        description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore asperiores unde. Totam, alias porro!',
-        price: 199.99,
-        rating: 3,
-        img : "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
+        id: 2,
+        order: '03',
+        title : 'Everything you need in one place',
+        description : 'Stop jumping from one service to another to communicate, store files,track tasks and share documents. Manage offers an all-in-one team productivity solution.'
+    }
+]
+
+export const persons = [
+    {
+        id: 0,
+        name : 'Anisha Li',
+        feedback : '“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”',
+        img : 'images/avatar-anisha.png'
     },
     {
-        id : 3,
-        description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore asperiores unde. Totam, alias porro!',
-        price: 598.98,
-        rating: 4,
-        img : "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg"
+        id: 1,
+        name : 'Ali Bravo',
+        feedback : '“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”',
+        img : 'images/avatar-ali.png'
     },
     {
-        id : 4,
-        description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore asperiores unde. Totam, alias porro!',
-        price: 11.98,
-        rating: 5,
-        img : "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+        id: 2,
+        name : 'Richard Watts',
+        feedback : '“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”',
+        img : 'images/avatar-richard.png'
     },
     {
-        id : 5,
-        description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati inventore asperiores unde. Totam, alias porro!',
-        price: 11.98,
-        rating: 5,
-        img : "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg"
+        id: 3,
+        name : 'Shanai Gough',
+        feedback : '“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”',
+        img : 'images/avatar-shanai.png'
     },
 ]

@@ -1,22 +1,20 @@
-import { useState } from 'react'
-import {BrowserRouter as Router , Routes , Route} from 'react-router-dom'
-import Checkout from './components/Checkout'
-import Home from './components/Home'
+import About from "./components/About"
+import Features from "./components/Features"
+import Feedback from "./components/Feedback"
+import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
-import productContext from './context'
+import Work from "./components/Work"
 
 function App() {
-    const [products, setProducts] = useState([])
     return (
-        <productContext.Provider value={[products, setProducts]}>
-            <Router>
-                <Navbar />
-                <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/checkout' element={<Checkout />} />
-                </Routes>
-            </Router>
-        </productContext.Provider>
+        <>
+            <Navbar />
+            <Work />
+            <Features />
+            <Feedback />
+            <About />
+            <Footer />
+        </>
     )
 }
 
