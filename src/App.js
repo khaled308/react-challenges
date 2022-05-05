@@ -1,22 +1,25 @@
-import { useState } from 'react'
-import {BrowserRouter as Router , Routes , Route} from 'react-router-dom'
-import Checkout from './components/Checkout'
-import Home from './components/Home'
-import Navbar from "./components/Navbar"
-import productContext from './context'
+import { useState } from "react"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import Country from "./Country"
+import GlobalStyle from "./GlobalStyle"
+import Header from "./Header"
+import Home from "./Home"
+
 
 function App() {
-    const [products, setProducts] = useState([])
+    const[style , setStyle] = useState('')
     return (
-        <productContext.Provider value={[products, setProducts]}>
-            <Router>
-                <Navbar />
-                <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/checkout' element={<Checkout />} />
-                </Routes>
-            </Router>
-        </productContext.Provider>
+        <GlobalStyle.Provider value={[style , setStyle]}>
+            <div className={`overflow-x-hidden min-h-screen ${style}`}>
+                <Router>
+                    <Header />
+                    <Routes>
+                        <Route path='/' element={<Home />} />
+                        <Route path='/:country' element={<Country />} />
+                    </Routes>
+                </Router>
+            </div>
+        </GlobalStyle.Provider>
     )
 }
 
